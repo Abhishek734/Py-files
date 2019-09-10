@@ -22,6 +22,11 @@ class Employee:
     def set_raise_amount(cls, amount): # cls class Variable //self for instance varibale
         cls.raise_amount = amount
 
+    @classmethod # new constructor //class methods as alternative constructor
+    def from_string(cls, emp_str):
+        first, last, pay = emp_str.split("-")
+        return cls(first, last, pay)
+
 # instances
 
 emp_1 = Employee("Avinas","kumar",50000)  # self passed automatically
@@ -38,5 +43,9 @@ emp_2 = Employee("deepa","kumari",40000)
 emp_str_1 = 'John-Doe-70000'
 emp_str_2 = 'Steve-Smith-30000'
 emp_str_3 = 'Jane-Doe-90000'
+
+new_emp_1 = Employee.from_string(emp_str_1)
+print(new_emp_1.email)
+print(new_emp_1.pay)
 
 
