@@ -24,10 +24,13 @@ emp_2 = Employee("deepa","kumari",40000)
 # print(emp_1.pay)
 # emp_1.apply_raise()
 # print(emp_1.pay)
+# Employee.raise_amount = 1.05
+emp_1.raise_amount = 1.05
 
 print(Employee.raise_amount)
 print(emp_1.raise_amount)
 print(emp_2.raise_amount)
 
-# print(emp_1.__dict__)
-print(Employee.__dict__)
+print(emp_1.__dict__)
+print(emp_2.__dict__)
+# print(Employee.__dict__)
