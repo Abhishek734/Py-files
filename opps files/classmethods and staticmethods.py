@@ -27,6 +27,12 @@ class Employee:
         first, last, pay = emp_str.split("-")
         return cls(first, last, pay)
 
+    @staticmethod #decorator
+    def is_workday(day):
+        if day.weekday() == 5 or day.weekday() == 6:
+            return False
+        return True
+
 # instances
 
 emp_1 = Employee("Avinas","kumar",50000)  # self passed automatically
@@ -40,12 +46,20 @@ emp_2 = Employee("deepa","kumari",40000)
 # print(emp_1.raise_amount)
 # print(emp_2.raise_amount)
 
-emp_str_1 = 'John-Doe-70000'
-emp_str_2 = 'Steve-Smith-30000'
-emp_str_3 = 'Jane-Doe-90000'
+# emp_str_1 = 'John-Doe-70000'
+# emp_str_2 = 'Steve-Smith-30000'
+# emp_str_3 = 'Jane-Doe-90000'
 
-new_emp_1 = Employee.from_string(emp_str_1)
-print(new_emp_1.email)
-print(new_emp_1.pay)
+# new_emp_1 = Employee.from_string(emp_str_1)
+# print(new_emp_1.email)
+# print(new_emp_1.pay)
 
+# regular methods auto pass instance as self
+# class methods auto pass cls instances
+# static don't pass anything automatically // logical connection with class
+
+import datetime
+# my_date = datetime.date(2016,7,10)
+my_date = datetime.date(2016,7,11)
+print(Employee.is_workday(my_date))
 
