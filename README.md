@@ -1,2 +1,2 @@
 # Py-files
- General python files
+ General python files for programming
