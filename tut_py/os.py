@@ -1,10 +1,10 @@
 import os
 
-# print(dir(os))
+# print(dir(os)) # dir assorciated with "os"
 # print(os.getcwd()) # current dir
 # os.chdir('C:/Users/Acer/Desktop/') # change dir
 # print(os.getcwd())
-# print(os.listdir()) # return list of dir
+print(os.listdir()) # return list of dir
 
 # os.mkdir("NST-2/sub-Dir-2") # making new dir
 # os.makedirs("NST-2/sub-Dir-2") # making new dir //prefered
@@ -38,8 +38,8 @@ os.chdir('C:/Users/Acer/Desktop/') # change dir
 # with open(file_pathm,"w") as f:
 #     f.write()
 
-print(os.path.split("/tmp/test.txt")) # os.path.split
-print(os.path.exists("/tmp/test.")) # os.path.exists #os.path.isdir #os.path.isfile
+# print(os.path.split("/tmp/test.txt")) # os.path.split
+# print(os.path.exists("/tmp/test.")) # os.path.exists #os.path.isdir #os.path.isfile
 
-print(os.path.splitext("/tmp/test.txt")) # returns ('/tmp/test', '.txt')
-print(dir(os.path)) # read all the dirs in os.path
+# print(os.path.splitext("/tmp/test.txt")) # returns ('/tmp/test', '.txt')
+# print(dir(os.path)) # read all the dirs in os.path
