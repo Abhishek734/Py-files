@@ -14,7 +14,7 @@ class Employee:
 emp_1 = Employee("Avinas","kumar",50000)  # self passed automatically
 emp_2 = Employee("deepa","kumari",40000)
 
-# print(emp_1)
+print(emp_1)
 # print(emp_2)
 
 # emp_1.first = "Abhi"

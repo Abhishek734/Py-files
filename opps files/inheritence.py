@@ -70,3 +70,5 @@ print(issubclass(Manager,Developers)) # False
 # print(dev_1.pay)
 # dev_1.apply_raise()
 # print(dev_1.pay)
+# import
+# model = Model()

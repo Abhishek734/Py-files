@@ -20,4 +20,5 @@
 # primelist = lambda n : [x for x in range(50,101) if not 0 in map(lambda t: x%t, range(50,101))]
 # print(",".join(map(str, primelist(22))))
 
-print([num for num in range(50,101) if 0 not in [num%cc for cc in range(2,num)]])
+# print([num for num in range(50,101) if 0 not in [num%cc for cc in range(2,num)]])
+
